@@ -1,15 +1,11 @@
-# 📊 Telecom X: Predicción de Cancelación de Clientes (Customer Churn)
+# Telecom X: Predicción de Cancelación de Clientes
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange.svg)
-![Data Analysis](https://img.shields.io/badge/Data%20Analysis-Pandas%20%7C%20Seaborn-green.svg)
-
-## 📖 Descripción del Proyecto
+## Descripción del Proyecto
 Este proyecto es una solución *End-to-End* de Ciencia de Datos aplicada a la industria de las telecomunicaciones. El objetivo principal es desarrollar un modelo predictivo de Machine Learning capaz de identificar qué clientes tienen un alto riesgo de cancelar su servicio (**Churn**), permitiendo a la empresa "Telecom X" tomar acciones preventivas de retención.
 
 Dado que **adquirir un nuevo cliente es hasta 5 veces más caro que retener a uno existente**, este proyecto no solo se enfoca en la predicción matemática, sino en la extracción de *Insights* accionables para el negocio.
 
-## 🎯 Objetivos
+## Objetivos
 1. **Limpiar y preprocesar** una base de datos histórica de clientes.
 2. **Explorar los datos (EDA)** para entender el comportamiento de los usuarios.
 3. **Entrenar y evaluar modelos de Machine Learning** priorizando la capacidad de detectar clientes en riesgo (optimización del *Recall*).
@@ -18,7 +14,7 @@ Dado que **adquirir un nuevo cliente es hasta 5 veces más caro que retener a un
 
 ---
 
-## 🛠️ Metodología y Fases del Proyecto
+## Metodología y Fases del Proyecto
 
 ### Fase 1: Limpieza de Datos (Data Cleaning)
 * Tratamiento de valores nulos (ej. clientes con 0 meses de permanencia y campos vacíos en `Cargos_Totales`).
@@ -41,19 +37,19 @@ Se entrenaron y compararon dos enfoques algorítmicos distintos:
 
 ---
 
-## 📈 Resultados y Conclusiones del Modelado
+## Resultados y Conclusiones del Modelado
 
 * La **Regresión Logística** fue seleccionada como el mejor modelo para producción debido a su excelente capacidad de generalización y su alto nivel de *Recall*, capturando a la gran mayoría de los clientes en riesgo sin caer en *Overfitting* (sobreajuste), un problema que sí presentó el Random Forest en su configuración base.
 * Se extrajeron los coeficientes del modelo y la importancia de variables (*Feature Importance*) para entender los motores de la cancelación.
 
-### 🔑 Top 3 Factores que impulsan el Churn:
+### Top 3 Factores que impulsan el Churn:
 1. **Tiempo de contrato (Meses_Permanencia):** La mayoría de las deserciones ocurren en los primeros 6 meses.
 2. **Tipo de Contrato:** Los contratos "Mes a Mes" (*Month-to-month*) facilitan la fuga rápida hacia la competencia.
 3. **Cargos Mensuales:** Facturas elevadas sin una percepción clara de valor generan insatisfacción inmediata.
 
 ---
 
-## 💼 Estrategias de Negocio Propuestas
+## Estrategias de Negocio Propuestas
 A partir de las predicciones del modelo, se recomienda al equipo de Marketing y Ventas:
 
 1. **Programa de Onboarding:** Fuerte enfoque en el soporte y fidelización durante el primer semestre del ciclo de vida del cliente.
@@ -63,7 +59,7 @@ A partir de las predicciones del modelo, se recomienda al equipo de Marketing y 
 
 ---
 
-## 💻 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 * **Lenguaje:** Python 3.x
 * **Manipulación de Datos:** Pandas, Numpy
 * **Visualización:** Matplotlib, Seaborn
@@ -72,7 +68,7 @@ A partir de las predicciones del modelo, se recomienda al equipo de Marketing y 
 
 ---
 
-## 🚀 Cómo ejecutar este proyecto localmente
+## Cómo ejecutar este proyecto localmente
 
 1. Clona este repositorio:
    ```bash
